@@ -1,0 +1,12 @@
+# Binários
+pathfinding
+*.o
+*.exe
+a.out
+
+# Código MATLAB do Saunders (referência externa)
+fsynth/
+
+# OS
+.DS_Store
+Thumbs.db
