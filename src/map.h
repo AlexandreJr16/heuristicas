@@ -10,5 +10,10 @@ extern vector<vector<bool>> grid;
 extern int px[4];
 extern int py[4];
 
+bool verificaPontosConectados(pair<int, int> start, pair<int,int> goal);
+
 // Carrega o mapa
 void loadMap(string &filename);
+
+
+void degradaMapa(int n);
