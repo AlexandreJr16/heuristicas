@@ -51,14 +51,17 @@ void loadMap(string &filename) {
   grid.resize(height, vector<bool>(width));
   string line;
   getline(file, line);
+  int cont =0;
 
   // le o mapa
   for (int i = 0; i < height; i++) {
     getline(file, line);
     for (int j = 0; j < width; j++) {
       grid[i][j] = (line[j] == '.');
+      cont++;
     }
   }
+  cout << cont << endl;
 }
 
 void degradaMapa(int n){

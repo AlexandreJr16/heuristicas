@@ -6,6 +6,7 @@ typedef int (*Heuristica)(pair<int, int>, pair<int, int>);
 // Utilizo isso para memory-based
 extern vector<pair<int, int>> pivos;
 extern vector<vector<vector<int>>> distPivos;
+extern map<int, vector<pair<int,int>>> pivosMap;
 
 // Gerar números aleatórios
 int randomNumbers(int num);
@@ -27,3 +28,7 @@ int heuristicaManhattan(pair<int, int> start, pair<int, int> goal);
 
 // heuristica de memória para o den000d
 int heuristicaFormula(pair<int, int> s, pair<int, int> goal);
+
+//Carrega pivos salvos antes
+void computarDistPivosFixos(vector<pair<int,int>> pivosFixos);
+

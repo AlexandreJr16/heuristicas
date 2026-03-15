@@ -28,6 +28,16 @@ vector<pair<int, int>> generatePivots(int n) {
   return pivotList;
 }
 
+
+//Carrega pivos fixos
+void computarDistPivosFixos(vector<pair<int,int>> pivosFixos) {
+    pivos = pivosFixos;
+    distPivos.clear();
+    for (auto &pivo : pivos) {
+        distPivos.push_back(bfsPivo(pivo));
+    }
+}
+
 // BFS dos pivos até todos os pontos
 vector<vector<int>> bfsPivo(pair<int, int> pivo) {
   vector<vector<int>> dists(height, vector<int>(width, -1));
